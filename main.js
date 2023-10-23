@@ -35,7 +35,22 @@ const navbarMenu = document.querySelector(".navbar__menu");
 
 
 iconShowMenu.addEventListener('click', () => {
-    navbarMenu.classList.toggle("navbar__menu--show");
+   if (navbarMenu.classList.toggle("navbar__menu--show"))
+        return iconShowMenu.classList.add("bx-x");
+    iconShowMenu.classList.remove("bx-x");
+   }
+);
+
+
+//darkmode
+
+const iconTheme =document.querySelector(".iconTheme");
+
+iconTheme.addEventListener("click", () => {
+   if (document.body.classList.toggle("darkTheme"))
+   return (iconTheme.textContent = "🌞");
+
+    iconTheme.textContent= "🌚"
 })
 
 
