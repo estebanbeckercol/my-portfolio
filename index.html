@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteban Becker</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body class="darkTheme">
+
+    <i class='iconShowMenu bx bx-menu'></i>
+
+    <nav class="navbar">
+        <span><a href="#home">Esteban Becker</a></span>
+
+        <ul class="navbar__menu">
+            <li><a class="link link--active"  href="#home">Home</a></li>
+            <li><a class="link"  href="#about">About</a></li>
+            <li><a class="link"  href="#portfolio">Portfolio</a></li>
+            <li><a class="link"  href="#contact">contact</a></li>
+           
+        </ul>
+    </nav>
+
+    <main class="container__principal">
+        <section id="home" class="hidden">
+            <h1 class="home_title">Hello, my name is <span>Andres Esteban Ruiz</span> and I am a <span>full stack developer</span></h1>
+        </section>
+        <section id="about" class="hidden">
+            <h2>Who I Am</h2>
+            <p>
+                Greetings! I am Andrés Esteban Ruiz, a versatile Full Stack developer with a penchant for creating exceptional digital experiences. Throughout my career, I have honed my skills to encompass both front-end and back-end development, ensuring a smooth and engaging user journey.</p>
+           <!--<p>
+                My journey began with a deep-rooted fascination for technology, and it has evolved into a professional dedication to crafting elegant solutions that marry design and functionality. From crafting eye-catching interfaces to architecting robust databases and optimizing server performance, I relish the challenge of mastering the entire software development lifecycle.</p>
+            <p>
+                On the front-end side, I love bringing designs to life, meticulously coding with HTML, CSS, and JavaScript to create beautiful and intuitive user interfaces. I have experience with frameworks such as ReactJS and Vue.js, which allow me to create dynamic and responsive applications that exceed expectations.
+            </p>
+            <p>
+                On the flip side, I revel in the complexities of back-end development. Leveraging technologies like Node.js and Python, I build the foundations on which applications operate. Scalability, security and efficiency are at the core of my back-end strategy, ensuring a robust infrastructure that can handle a wide range of tasks.
+            </p>
+            <p>
+                But it doesn't stop there. I am passionate about learning and staying up-to-date with emerging technologies and trends, enabling me to adapt and thrive in an ever-evolving digital landscape. My drive to innovate and deliver exceptional results sets me apart in the fast-paced world of Full Stack Development.
+            </p>
+            <p>
+                Let's embark on a journey of innovation together, where we can transform visions into tangible, high-performing solutions that leave a lasting impact.
+            </p>--> 
+                <div class="about_img">
+                    <img src="assets/images/me.jpg" alt="this is me">
+                </div>
+        </section>
+
+        <section id="portfolio" class="hidden">
+
+            <h2>Portfolio</h2>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <img src="assets/images/porta1.jpg" alt="porta1">
+                </div>
+                <div class="portfolio">
+                    <img src="assets/images/porta2.jpg" alt="porta2">
+                </div>
+                <div class="portfolio">
+                    <img src="assets/images/porta3.jpg" alt="porta3">
+                </div>
+                
+            
+            </div>
+       
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact me</h2>
+            <form class="form">
+                <input type="text" placeholder="Enter your Name" name="nameUser" id="nameUser" required>
+
+                <input type="text" placeholder="Enter your email" name="emailUser" id="emailUser" required>
+
+                <textarea name="commentUser" id="commentUser" cols="30" rows="10" placeholder="Write me..."></textarea>
+                <button  class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <script  src="main.js"></script>
+</body>
+    </html>
