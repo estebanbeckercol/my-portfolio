@@ -41,6 +41,18 @@ iconShowMenu.addEventListener('click', () => {
    }
 );
 
+links.forEach((link) => {
+   closeMenu(link);
+})
+
+function closeMenu(elementHTML){
+    elementHTML.addEventListener('click', () => {
+        if (navbarMenu.classList.toggle("navbar__menu--show"))
+             return iconShowMenu.classList.add("bx-x");
+         iconShowMenu.classList.remove("bx-x");
+        }
+     );
+}
 
 //darkmode
 
