@@ -139,6 +139,22 @@ section {
     font-size: 3.2rem;
     color: var(--color-principal);
 }
+.span__h1 {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 22ch;
+    animation: typing 5s infinite steps(22), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+
+}
+@keyframes blink {
+    50% {border-color: transparent;}
+}
 
 .about_img {
     width:28% ;
