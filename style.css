@@ -107,7 +107,7 @@ p{
         p{
             width: auto;
         }
-        .home_title {
+       /* .home_title {
             font-size: 10px;
             text-align: center;
             width: auto;
@@ -116,6 +116,14 @@ p{
             width: auto;
             text-align: center;
            
+        }*/
+        .span__h1{
+            display: flex;
+            white-space: wrap;
+            flex-basis: 0;
+            flex-grow: 999;
+           
+
         }
     
 }
@@ -142,17 +150,19 @@ section {
 
 .home_title{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 2.0rem;
 }
 
 .home_title span{
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     color: var(--color-principal);
 }
 .span__h1 {
     display: block;
     font-family: monospace;
     white-space: nowrap;
+    
+   
     border-right: 4px solid;
     width: 21ch;
     animation: typing 5s infinite steps(21), blink .5s infinite step-end alternate;
