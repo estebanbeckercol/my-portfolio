@@ -165,7 +165,7 @@ section {
    
     border-right: 4px solid;
     width: 21ch;
-    animation: typing 5s infinite steps(21), blink .5s infinite step-end alternate;
+    animation: typing 8s infinite steps(21), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
 @keyframes typing {
