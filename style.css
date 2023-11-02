@@ -108,7 +108,7 @@ p{
             width: auto;
         }
        .home_title {
-           
+            font-size: 1.5rem;
             text-align: center;
             max-width: 100%;
         }
@@ -157,6 +157,7 @@ section {
 .home_title span{
     font-size: 2.0rem;
     color: var(--color-principal);
+    max-width: 100%;
 }
 .span__h1 {
     display: block;
