@@ -60,7 +60,7 @@ section>button a {
     justify-content: center;
     align-items: center;
     column-gap: 1em;
-    color: var(--background-color);
+    color: var(--color-font);
     font-weight: 600;
     font-size: 1.8vh;
   }
@@ -71,6 +71,8 @@ body >main>section>button{
     justify-content: center;
     align-items: center;
     background-color: var(--color-principal);
+    border-radius: 6px;
+    border: none;
     height: 6.5vh;
     cursor: pointer;
     transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
@@ -189,6 +191,32 @@ section {
     color: var(--color-principal);
     max-width: 100%;
 }
+.logo__tech{
+    min-height: 70vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+   
+   
+}
+.skill_logo{
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow:  0px 15px 25px
+    rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+   
+}
+.skill_logo img {
+    width: 200px;
+    height: 200px;
+    transition: all 500ms ease-out;
+}
 .span__h1 {
     display: block;
     font-family: monospace;
@@ -247,6 +275,7 @@ section {
 .portfolio figure :hover > .capa{
     opacity: 1;
     visibility: visible;
+    
 }
 .portfolio figure :hover > .capa h3{
     margin-top: 70px;
