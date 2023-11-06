@@ -173,6 +173,30 @@ body > main > section > button:hover {
             width: 100%;
             height: 100%;
         }
+        .span__h1 {
+          flex-wrap: wrap;
+        }
+    
+        .portfolios{
+            display: grid;
+            grid: template columns repeat(4, 1fr);
+            gap: 1rem;
+            padding: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+    
+        }
+        .hidden {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+       
+       
+       
+       
 }
 
 .link {
@@ -207,7 +231,7 @@ section {
 }
 .logo__tech{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:repeat(2, 3fr);
     gap: 1rem;
     width: 100%;
     justify-content: center;
@@ -255,8 +279,9 @@ section {
 
 .portfolios{
     display: grid;
-    grid-template-columns: 1fr;
+    grid: template columns 1fr;
     gap: 1rem;
+    padding: auto;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -299,7 +324,7 @@ section {
     margin-bottom: 15px;
 }
 .portfolio figure :hover > img {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .portfolio figure.capa h3{
     color: #fff;
@@ -324,6 +349,9 @@ section {
 }
 .portfolio:nth-child(3){
    transition-delay: 600ms;
+}
+.portfolio:nth-child(4){
+    transition-delay: 800ms;
 }
 
 .form {
@@ -384,8 +412,11 @@ section {
 
 @media (min-width: 800px) {
     .portfolios {
+       display: grid;
+       place-content: center;
        grid-template-columns:repeat(3, 1fr) ;
        grid-template-rows: 300px;
+      
     }
     .portfolios img {
        height: 100%;
@@ -408,7 +439,7 @@ section {
 
 .hidden {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-60px);
     transition: opacity 0.5s, transform 0.5s;
 }
 
